@@ -1,0 +1,59 @@
+<!--<h1>This is my BOOK LIST!</h1>
+
+
+
+<ul>
+  
+</ul>
+
+<h2>Books Completed:</h2>
+
+<ul>
+  
+</ul>
+
+<h2>Add a book!</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    
+  </div>
+
+    <button type="submit">Reading is fun!</button>
+</form> -->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">
+                Book List!
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <h2>Books to Read:</h2>
+            <table>
+                {{#each books}} {{#unless readed}} {{> books/book-block readed=true}} {{/unless}} {{/each}}
+            </table>
+        </div>
+        <div class="col-md-2">
+            <img alt="BOOKS!" src="../assets/images/bookshelf.jpg" class="rounded-circle" />
+            <div class="form-group">
+                <label for="title">Book Title:</label>
+                <input type="text" id="title" name="title">
+            </div>
+            <div class="form-group">
+                <label for="author">Book Author:</label>
+                <input type="text" id="author" name="author">
+            </div>
+            <button type="submit" class="btn btn-primary" id="text-enter-button">Reading is fun!</button>
+        </div>
+        <div class="col-md-5">
+            <h2>Books Completed:</h2>
+            <table>
+                {{#each books}} {{#if readed}} {{> books/book-block readed=false}} {{/if}} {{/each}}
+            </table>
+        </div>
+    </div>
+</div>
