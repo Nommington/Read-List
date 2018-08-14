@@ -1,5 +1,5 @@
 # Read-List
-This application keeps a database of books you'd like to read, as well as books you've read, using Express, MySQL, and Express-handlebars.
+>A full-stack application that uses Express, MySQL, and Express-handlebars to keep a database of books you'd like to read, as well as books you've read.
 
 ## Reading is fun!
 >Enter the title and author of a book you'd like to read, and when you click **submit** it will appear in the **Books to Read** list.
