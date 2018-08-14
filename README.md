@@ -15,3 +15,5 @@ All your books, both read and unread, are stored in a MySQL database.
 * [Express.js](https://expressjs.com/)
 * [Express Handlebars](https://www.npmjs.com/package/express-handlebars)
 * [MySQL](https://www.mysql.com/)
+* [jQuery](jquery.com)
+* [Twitter Bootstrap](https://getbootstrap.com/)
